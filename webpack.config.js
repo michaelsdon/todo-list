@@ -9,7 +9,11 @@ module.exports = {
   },
   entry: {
     index: './src/index.js',
-    second: './src/second.js',
+    project: './src/module/project.js',
+    // storage: './src/module/storage.js',
+    task: './src/module/task.js',
+    todolist: './src/module/todolist.js',
+    // ui: './src/ui.js',
   },
   mode: 'development',
   module: {
@@ -17,6 +21,10 @@ module.exports = {
       {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
@@ -27,7 +35,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Development',
+      title: 'Todo List',
+      template: './src/index.ejs',
     }),
   ],
 };

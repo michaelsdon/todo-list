@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> 
+  <script src="index.js" defer></script>
+  <title>To Do List</title>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      Todo List
+    </div>
+    <div class="header-right">
+      <img src=<%=require("./images/michael-profile.png")%> alt=""/>
+    </div>
+  </header>
+  <div class="main-body">
+    <nav>
+      <div id="filters">
+        <div class="nav-label">
+          <div class="nav-label-left">
+            <img src=<%=require("./images/today.svg")%> alt=""/>
+            <span>Today</span>
+          </div>
+          <div class="nav-label-right">
+            <span id="today-number"></span>
+          </div>
+        </div>
+        <div class="nav-label">
+          <div class="nav-label-left">
+            <img src=<%=require("./images/upcoming.svg")%> alt="">
+            <span>Upcoming</span>
+          </div>
+          <div class="nav-label-right">
+            <span id="upcoming-number"></span>
+          </div>
+        </div>
+      </div>
+      <div id="projects">
+        <div id="projects-nav-header">
+          <h4>Projects</h4>
+          <img id="add-project" src=<%=require("./images/add.svg")%> alt="">
+        </div>
+      </div>
+
+    </nav>
+    <main>
+      <div id="project-header">
+
+      </div>
+      <div id="high-priority">
+
+      </div>
+      <div id="regular-priority">
+        
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
